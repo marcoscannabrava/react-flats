@@ -6,7 +6,7 @@ import Flat from './flat';
 class FlatList extends Component {
   render() {
     return (
-      flats.map(flat => <Flat data={flat} key={flat.name} />)
+      flats.map(flat => <Flat data={flat} key={flat.name} select={this.props.select} selected={this.props.selected} />)
     );
   }
 }
